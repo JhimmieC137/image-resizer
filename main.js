@@ -27,10 +27,10 @@ function createMainWindow(){
     });
 
 
-// Openn devtools if in dev env
-if (isDev) {
-    mainWindow.webContents.openDevTools();
-}
+    // Openn devtools if in dev env
+    if (isDev) {
+        mainWindow.webContents.openDevTools();
+    }
 
     mainWindow.loadFile(path.join(__dirname, './renderer/templates/index.html')); 
 }
